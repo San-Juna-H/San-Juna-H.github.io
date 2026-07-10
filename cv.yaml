@@ -3,6 +3,9 @@
 cv:
   name: June Ji
   headline: Ph.D. Student
+  location: 39-425 Seoul National University, 1 Gwanak-ro, Gwanak-gu, Seoul, South Korea 08826
+  phone: +82-2-880-8311
+  email: sanjunah16@snu.ac.kr
   website: https://san-juna-h.github.io
   social_networks:
     - network: Google Scholar
@@ -15,28 +18,19 @@ cv:
         area: Department of Architecture and Architectural Engineering
         degree: Ph.D.
         date: Sept 2026 – present
-        location: Seoul, South Korea
-        highlights:
-          - 'Advisor: Prof. Changbum Ryan Ahn'
       - institution: Seoul National University
         area: Department of Architecture and Architectural Engineering
         degree: M.S.
         start_date: 2024-09
         end_date: 2026-08
-        location: Seoul, South Korea
-        highlights:
-          - 'Advisor: Prof. Changbum Ryan Ahn'
+        summary: |-
+          Advisor: Prof. Changbum Ryan Ahn
+          Thesis: Analyzing the Role of Region-of-Interest Identification in Multimodal Large Language Models for Construction Drawing Question Answering
       - institution: Seoul National University
         area: Department of Architecture and Architectural Engineering
         degree: B.S.
         start_date: 2016-03
         end_date: 2024-02
-        location: Seoul, South Korea
-    Experience:
-      - company: Republic of Korea Army
-        position: Sergeant
-        start_date: 2020-11
-        end_date: 2022-04
     Research Experience:
       - company: Development of a Drawing-Specialized Visual-Language Reasoning AI for Automated Design Review and 2D Plan Recognition of Multi-Family Housing
         position: Lead Researcher
@@ -50,40 +44,89 @@ cv:
         position: Researcher
         start_date: 2023-05
         end_date: 2023-11
-    Teaching Experience:
-      - company: Seoul National University
-        position: Teaching Assistant
-        date: Spring 2026
-        summary: Department of Architecture and Architectural Engineering
-        highlights:
-          - '**Instructor:** Prof. Changbum R. Ahn'
-          - M1498.002700 Smart Construction Technology
-          - M1498.002900 Data Analytics for Construction Safety and Health
-    Mentoring Experience:
-      - company: Seoul National University
-        position: Research Mentor
-        highlights:
-          - Mijin Goo (M.S. Student)
-          - Juhyun Bae (M.S. Student)
-    Scholarships:
-      - name: Advanced Construction Project Management Program (ACPMP)
+    Publications:
+      - title: 'Floor Plan Generation Combining Large Language Models and Gradient Descent Optimization'
+        summary: Domestic Conference
+        authors:
+          - '**June Ji**'
+          - Moonseo Park
+          - Changbum R. Ahn*
+        journal: Proceedings of the Architectural Institute of Korea Conference
         date: 2025
-        summary: Seoul National University
-      - name: Advanced Industrial Strategy Program (AIP)
-        date: 2025
-        summary: Seoul National University
+      - title: 'Analysis of On-Site Utilization of the Hazard and Risk Prevention Plan System in the Construction Industry'
+        summary: Domestic Journal
+        authors:
+          - '**June Ji**'
+          - Jeonghun Won
+          - Seongwoo Shin
+          - Byeonghui Yoo
+          - Chaewon Yang
+          - Chanyoung Lee
+          - Moonseo Park
+          - Changbum R. Ahn*
+        journal: Journal of the Korea Institute of Construction Safety
+        date: 2024
     Research Grants:
       - company: Development of a Drawing-Specialized Visual-Language Reasoning AI for Automated Design Review and 2D Plan Recognition of Multi-Family Housing
         start_date: 2026-04
         end_date: 2028-12
         position: Lead Proposal Writer
-        highlights: 
-          - Funded by Ministry of Land, Infrastructure and Transport (MOLIT) · KRW 875,000,000
+        summary: Funded by Ministry of Land, Infrastructure and Transport (MOLIT) · KRW 875,000,000
+    Teaching Experience:
+      - company: Seoul National University
+        position: Teaching Assistant to Prof. Changbum R. Ahn
+        date: Spring 2026
+        highlights:
+          - M1498.002700 Smart Construction Technology
+          - M1498.002900 Data Analytics for Construction Safety and Health
+    Awards & Honors:
+      - name: Advanced Construction Project Management Program (ACPMP) Scholarship
+        date: 2025
+        summary: Seoul National University
+      - name: Advanced Industrial Strategy Program (AIP) Scholarship
+        date: 2025
+        summary: Seoul National University
+    Professional Experience:
+      - company: Republic of Korea Army
+        position: Sergeant
+        start_date: 2020-11
+        end_date: 2022-04
+    Mentoring:
+      - company: Seoul National University
+        position: Research Mentor
+        highlights:
+          - Mijin Goo (M.S. Student)
+          - Juhyun Bae (M.S. Student)
 
 design:
   theme: classic
+  page:
+    size: a4
   typography:
     alignment: left
+  templates:
+    education_entry:
+      main_column: |-
+        **INSTITUTION**
+        *AREA*
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column: DATE
+    experience_entry:
+      main_column: |-
+        **COMPANY**
+        *POSITION*
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column: DATE
+    publication_entry:
+      main_column: |-
+        *SUMMARY*
+        **TITLE**
+        AUTHORS
+        *JOURNAL*
+        URL
+      date_and_location_column: DATE
 
 locale:
   language: english
