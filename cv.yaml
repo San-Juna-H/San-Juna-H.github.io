@@ -105,6 +105,8 @@ design:
   typography:
     alignment: left
   templates:
+    footer: '*Curriculum Vitae (CV) -- PAGE_NUMBER/TOTAL_PAGES*'
+    top_note: '*Last updated on MONTH_NAME DAY, YEAR*'
     education_entry:
       main_column: |-
         **INSTITUTION**
