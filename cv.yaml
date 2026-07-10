@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+
+cv:
+  name: June Ji
+  headline: M.S. Student
+  website: https://san-juna-h.github.io
+  social_networks:
+    - network: GitHub
+      username: San-Juna-H
+  sections:
+    Education:
+      - bullet: M.S. Student, Seoul National University
+
+design:
+  theme: classic
+  page:
+    size: a4
+    show_top_note: false
+
+locale:
+  language: english
+
+settings:
+  current_date: today
+  render_command:
+    output_folder: rendercv_output
+    pdf_path: cv.pdf
+    dont_generate_markdown: true
+    dont_generate_html: true
+    dont_generate_png: true
+  pdf_title: June Ji - CV
