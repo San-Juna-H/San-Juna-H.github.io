@@ -84,13 +84,6 @@ design:
   theme: classic
   page:
     size: a4
-  templates:
-    footer: '*Last updated MONTH_ABBREVIATION DAY, YEAR · NAME · PAGE_NUMBER/TOTAL_PAGES*'
-    education_entry:
-      main_column: |-
-        **INSTITUTION**
-        *AREA*
-        HIGHLIGHTS
 
 locale:
   language: english
