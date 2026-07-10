@@ -32,13 +32,68 @@ cv:
         start_date: 2016-03
         end_date: 2024-02
         location: Seoul, South Korea
+    Experience:
+      - company: Republic of Korea Army
+        position: Sergeant
+        start_date: 2020-11
+        end_date: 2022-04
+    Research Experience:
+      - company: Development of a Drawing-Specialized Visual-Language Reasoning AI for Automated Design Review and 2D Plan Recognition of Multi-Family Housing
+        position: Lead Researcher
+        start_date: 2026-04
+        end_date: 2028-12
+      - company: A Study on the Effectiveness Analysis and Improvement of On-Site Operability of Hazard and Risk Prevention Plans in the Construction Industry
+        position: Researcher
+        start_date: 2024-05
+        end_date: 2024-11
+      - company: Development of Construction Site Smart Safety Model Factory and Evaluation Standards
+        position: Researcher
+        start_date: 2023-05
+        end_date: 2023-11
+    Teaching Experience:
+      - company: Seoul National University
+        position: Teaching Assistant
+        date: Spring 2026
+        summary: Department of Architecture and Architectural Engineering
+        highlights:
+          - '**Instructor:** Prof. Changbum R. Ahn'
+          - M1498.002700 Smart Construction Technology
+          - M1498.002900 Data Analytics for Construction Safety and Health
+      - company: Seoul National University
+        position: Research Mentor
+        summary: Mentored M.S. students in the Department of Architecture and Architectural Engineering
+        highlights:
+          - Mijin Goo (M.S. Student)
+          - Juhyun Bae (M.S. Student)
+    Scholarships:
+      - name: Advanced Construction Project Management Program (ACPMP)
+        date: 2025
+        summary: Seoul National University
+      - name: Advanced Industrial Strategy Program (AIP)
+        date: 2025
+        summary: Seoul National University
+    Research Grants:
+      - name: Development of a Drawing-Specialized Visual-Language Reasoning AI for Automated Design Review and 2D Plan Recognition of Multi-Family Housing
+        start_date: 2026-04
+        end_date: 2028-12
+        position: Lead Proposal Writer
+        summary: >
+          Funded by Ministry of Land, Infrastructure and Transport (MOLIT) · KRW 875,000,000
 
 design:
   theme: classic
   page:
     size: a4
     show_top_note: false
+  typography:
+    alignment: left
+  section_titles:
+    space_above: 0.3cm
+    space_below: 0.2cm
+  sections:
+    space_between_regular_entries: 0.9em
   templates:
+    footer: '*Last updated MONTH_ABBREVIATION DAY, YEAR · NAME · PAGE_NUMBER/TOTAL_PAGES*'
     education_entry:
       main_column: |-
         **INSTITUTION**
