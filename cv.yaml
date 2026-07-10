@@ -82,8 +82,8 @@ cv:
 
 design:
   theme: classic
-  page:
-    size: a4
+  typography:
+    alignment: left
 
 locale:
   language: english
