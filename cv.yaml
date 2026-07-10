@@ -73,7 +73,7 @@ cv:
         date: 2025
         summary: Seoul National University
     Research Grants:
-      - name: Development of a Drawing-Specialized Visual-Language Reasoning AI for Automated Design Review and 2D Plan Recognition of Multi-Family Housing
+      - company: Development of a Drawing-Specialized Visual-Language Reasoning AI for Automated Design Review and 2D Plan Recognition of Multi-Family Housing
         start_date: 2026-04
         end_date: 2028-12
         position: Lead Proposal Writer
