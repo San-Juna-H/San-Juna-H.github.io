@@ -84,18 +84,6 @@ design:
   theme: classic
   page:
     size: a4
-    show_top_note: false
-    top_margin: 1.7cm
-    bottom_margin: 1.7cm
-    left_margin: 1.7cm
-    right_margin: 1.7cm
-  typography:
-    alignment: left
-  section_titles:
-    space_above: 0.45cm
-    space_below: 0.25cm
-  sections:
-    space_between_regular_entries: 1.1em
   templates:
     footer: '*Last updated MONTH_ABBREVIATION DAY, YEAR · NAME · PAGE_NUMBER/TOTAL_PAGES*'
     education_entry:
