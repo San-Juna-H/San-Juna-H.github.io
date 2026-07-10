@@ -2,20 +2,48 @@
 
 cv:
   name: June Ji
-  headline: M.S. Student
+  headline: Ph.D. Student
   website: https://san-juna-h.github.io
   social_networks:
-    - network: GitHub
-      username: San-Juna-H
+    - network: Google Scholar
+      username: TKOhvukAAAAJ
+    - network: ORCID
+      username: 0009-0009-0649-4180
   sections:
     Education:
-      - bullet: M.S. Student, Seoul National University
+      - institution: Seoul National University
+        area: Department of Architecture and Architectural Engineering
+        degree: Ph.D.
+        date: Sept 2026 – present
+        location: Seoul, South Korea
+        highlights:
+          - 'Advisor: Prof. Changbum Ryan Ahn'
+      - institution: Seoul National University
+        area: Department of Architecture and Architectural Engineering
+        degree: M.S.
+        start_date: 2024-09
+        end_date: 2026-08
+        location: Seoul, South Korea
+        highlights:
+          - 'Advisor: Prof. Changbum Ryan Ahn'
+      - institution: Seoul National University
+        area: Department of Architecture and Architectural Engineering
+        degree: B.S.
+        start_date: 2016-03
+        end_date: 2024-02
+        location: Seoul, South Korea
 
 design:
   theme: classic
   page:
     size: a4
     show_top_note: false
+  templates:
+    education_entry:
+      main_column: |-
+        **INSTITUTION**
+        *AREA*
+        HIGHLIGHTS
 
 locale:
   language: english
