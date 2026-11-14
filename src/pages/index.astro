@@ -19,13 +19,16 @@ import { url } from "../utils/url-utils";
                 <h1 id="welcome-title">{profileConfig.name}</h1>
                 <div class="biography">
                     <p>
-                        {homeConfig.introduction} I work with Professor
+                        {homeConfig.introduction}, advised by Professor
                         <a href={homeConfig.advisor.url} target="_blank" rel="noopener noreferrer">{homeConfig.advisor.name}</a>
                         at the <a href={homeConfig.lab.url} target="_blank" rel="noopener noreferrer">{homeConfig.lab.name}</a>.
                     </p>
+                    <p>
+                        My research interests lie in <strong>{homeConfig.researchFocus}</strong>, {homeConfig.researchDescription}
+                    </p>
                     <p>{homeConfig.note}</p>
                     <p class="contact">
-                        The best way to contact me is <a href={`mailto:${homeConfig.email}`}>{homeConfig.email}</a>.
+                        The best way to reach me is <a href={`mailto:${homeConfig.email}`}>{homeConfig.email}</a>.
                     </p>
                 </div>
             </div>
@@ -108,7 +111,6 @@ import { url } from "../utils/url-utils";
     .destination-title { font-size: 1.125rem; font-weight: 700; }
     .destination-description { font-size: 0.75rem; line-height: 1.5; }
     .destination-arrow { font-size: 1.25rem; flex-shrink: 0; }
-    .contact { font-size: 0.875rem; }
     .contact a { overflow-wrap: anywhere; }
     @media (max-width: 767px) {
         .introduction { flex-direction: column; align-items: flex-start; gap: 1.5rem; margin-bottom: 2rem; }

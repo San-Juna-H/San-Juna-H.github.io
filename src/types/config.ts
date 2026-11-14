@@ -108,6 +108,8 @@ export type FeaturedLink = NavBarLink & {
 
 export type HomeConfig = {
 	introduction: string;
+	researchFocus: string;
+	researchDescription: string;
 	note: string;
 	email: string;
 	lab: NavBarLink;
