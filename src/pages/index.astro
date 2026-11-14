@@ -1,0 +1,123 @@
+---
+import { Icon } from "astro-icon/components";
+import ImageWrapper from "../components/misc/ImageWrapper.astro";
+import { featuredLinks, homeConfig, profileConfig } from "../config";
+import MainGridLayout from "../layouts/MainGridLayout.astro";
+import { url } from "../utils/url-utils";
+---
+
+<MainGridLayout description={`${profileConfig.name} — ${homeConfig.introduction}`} lang="en" showSidebar={false}>
+    <section class="card-base landing" aria-labelledby="welcome-title">
+        <div class="introduction">
+            <ImageWrapper
+                src={profileConfig.avatar || ""}
+                alt={`${profileConfig.name}'s profile photo`}
+                class="portrait"
+            />
+            <div class="introduction-copy">
+                <p class="eyebrow">WELCOME</p>
+                <h1 id="welcome-title">{profileConfig.name}</h1>
+                <div class="biography">
+                    <p>
+                        {homeConfig.introduction} I work with Professor
+                        <a href={homeConfig.advisor.url} target="_blank" rel="noopener noreferrer">{homeConfig.advisor.name}</a>
+                        at the <a href={homeConfig.lab.url} target="_blank" rel="noopener noreferrer">{homeConfig.lab.name}</a>.
+                    </p>
+                    <p>{homeConfig.note}</p>
+                    <p class="contact">
+                        The best way to contact me is <a href={`mailto:${homeConfig.email}`}>{homeConfig.email}</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <nav class="destinations" aria-label="Explore">
+            {featuredLinks.map((link) => (
+                <a
+                    class="destination"
+                    href={link.external ? link.url : url(link.url)}
+                    target={link.external ? "_blank" : undefined}
+                    rel={link.external ? "noopener noreferrer" : undefined}
+                >
+                    <span class="destination-icon" aria-hidden="true">
+                        <Icon name={link.icon} />
+                    </span>
+                    <span class="destination-copy">
+                        <span class="destination-title">{link.name}</span>
+                        <span class="destination-description">{link.description}</span>
+                    </span>
+                    <Icon class="destination-arrow" name={link.external ? "material-symbols:arrow-outward-rounded" : "material-symbols:arrow-forward-rounded"} />
+                </a>
+            ))}
+        </nav>
+    </section>
+</MainGridLayout>
+
+<style>
+    .landing { padding: clamp(1.75rem, 5vw, 4rem); }
+    .introduction {
+        display: flex;
+        align-items: flex-start;
+        gap: clamp(1.75rem, 4vw, 3rem);
+        margin-bottom: 3rem;
+    }
+    .introduction-copy { min-width: 0; }
+    .landing :global(.portrait) {
+        width: 11rem;
+        aspect-ratio: 1;
+        flex-shrink: 0;
+        border-radius: 1.5rem;
+    }
+    .eyebrow {
+        color: var(--btn-content);
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        margin-bottom: 0.75rem;
+    }
+    h1 {
+        color: var(--deep-text);
+        font-size: clamp(2.5rem, 6vw, 3.5rem);
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: -0.04em;
+        margin-bottom: 1rem;
+    }
+    :global(.dark) h1 { color: rgb(255 255 255 / 0.95); }
+    .biography { max-width: 42rem; color: rgb(0 0 0 / 0.65); line-height: 1.8; }
+    :global(.dark) .biography { color: rgb(255 255 255 / 0.7); }
+    .biography p + p { margin-top: 0.75rem; }
+    .biography a { color: var(--btn-content); }
+    .biography a:hover { text-decoration: underline; }
+    .destinations { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+    .destination {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        min-height: 6.75rem;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        color: var(--btn-content);
+        background: var(--btn-regular-bg);
+        transition: background 150ms, transform 150ms;
+    }
+    .destination:hover { background: var(--btn-regular-bg-hover); transform: translateY(-3px); }
+    .destination:focus-visible, .biography a:focus-visible { outline: 2px solid var(--primary); outline-offset: 4px; }
+    .destination-icon { display: flex; font-size: 1.5rem; }
+    .destination-copy { display: flex; flex: 1; flex-direction: column; gap: 0.3rem; min-width: 0; }
+    .destination-title { font-size: 1.125rem; font-weight: 700; }
+    .destination-description { font-size: 0.75rem; line-height: 1.5; }
+    .destination-arrow { font-size: 1.25rem; flex-shrink: 0; }
+    .contact { font-size: 0.875rem; }
+    .contact a { overflow-wrap: anywhere; }
+    @media (max-width: 767px) {
+        .introduction { flex-direction: column; align-items: flex-start; gap: 1.5rem; margin-bottom: 2rem; }
+        .landing :global(.portrait) { width: 8rem; }
+        .destinations { grid-template-columns: 1fr; }
+        .destination { min-height: 5.5rem; padding: 1.25rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+        .destination { transition: none; }
+        .destination:hover { transform: none; }
+    }
+</style>
