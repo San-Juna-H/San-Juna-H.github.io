@@ -110,6 +110,7 @@ export type HomeConfig = {
 	introduction: string;
 	researchFocus: string;
 	researchDescription: string;
+	researchMethods: string;
 	note: string;
 	email: string;
 	lab: NavBarLink;

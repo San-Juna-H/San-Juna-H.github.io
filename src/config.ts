@@ -18,7 +18,7 @@ export const siteConfig: SiteConfig = {
 	},
 	banner: {
 		enable: true,
-		src: "/assets/banner.svg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+		src: "/assets/banner-sky.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 		position: "center", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
 		credit: {
 			enable: false, // Display the credit text of the banner image
@@ -48,7 +48,9 @@ export const homeConfig: HomeConfig = {
 	introduction: "I'm a Ph.D. student at Seoul National University",
 	researchFocus: "data models for the built environment",
 	researchDescription:
-		"with a particular focus on how information is represented, interpreted, and managed. My work draws on ideas from formal language theory, artificial intelligence, and database systems to explore new approaches to built-environment information systems.",
+		"with a particular focus on how information is represented, interpreted, and managed.",
+	researchMethods:
+		"formal language theory, artificial intelligence, and database systems",
 	note: "Here, I share research notes, ideas, and insights gained along the way.",
 	email: "sanjuah16@snu.ac.kr",
 	lab: {
