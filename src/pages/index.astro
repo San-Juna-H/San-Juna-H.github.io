@@ -18,17 +18,19 @@ import { url } from "../utils/url-utils";
                 <p class="eyebrow">WELCOME</p>
                 <h1 id="welcome-title">{profileConfig.name}</h1>
                 <div class="biography">
+                    <p>Hello, and welcome!</p>
                     <p>
                         {homeConfig.introduction}, advised by Professor
                         <a href={homeConfig.advisor.url} target="_blank" rel="noopener noreferrer">{homeConfig.advisor.name}</a>
                         at the <a href={homeConfig.lab.url} target="_blank" rel="noopener noreferrer">{homeConfig.lab.name}</a>.
                     </p>
                     <p>
-                        My research interests lie in <strong>{homeConfig.researchFocus}</strong>, {homeConfig.researchDescription}
+                        My research interests center on <strong>{homeConfig.researchFocus}</strong>, {homeConfig.researchDescription}
                     </p>
-                    <p>{homeConfig.note}</p>
                     <p class="contact">
-                        The best way to reach me is <a href={`mailto:${homeConfig.email}`}>{homeConfig.email}</a>.
+                        {homeConfig.note} I hope you find something of interest, and please feel free to contact me at
+                        <a href={`mailto:${homeConfig.email}`}>{homeConfig.email}</a>
+                        if you'd like to discuss any of these topics.
                     </p>
                 </div>
             </div>

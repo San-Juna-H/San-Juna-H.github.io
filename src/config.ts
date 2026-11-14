@@ -48,8 +48,8 @@ export const homeConfig: HomeConfig = {
 	introduction: "I'm a Ph.D. student at Seoul National University",
 	researchFocus: "data models for the built environment",
 	researchDescription:
-		"particularly in how information is represented, interpreted, and managed. My work draws on formal language theory, artificial intelligence, and database systems to explore new approaches to these challenges.",
-	note: "Here, I share research notes, ideas, and things I learn along the way.",
+		"with a particular focus on how information is represented, interpreted, and managed. My work draws on ideas from formal language theory, artificial intelligence, and database systems to explore new approaches to built-environment information systems.",
+	note: "Here, I share research notes, ideas, and insights gained along the way.",
 	email: "sanjuah16@snu.ac.kr",
 	lab: {
 		name: "CEM Lab",
